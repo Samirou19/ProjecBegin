@@ -1,17 +1,17 @@
 from Presenters.DisplayPresenter import DisplayPresenter
+from Ui.UserUi import UserUi
 
-#DONE
-from Ui.Affichage import Affichage
-
-userUi = Affichage()
-displayPresenter = DisplayPresenter()
+#IN DOING
+userUi = UserUi()
+userUi.enterUser()
 
 
 
 
 
 #TODO
-value = displayPresenter.retour()
-print(value)
-displayPresenter.SaveUser()
-displayPresenter.SecondStep()
+# displayPresenter = DisplayPresenter()
+# value = displayPresenter.retour()
+# print(value)
+# displayPresenter.SaveUser()
+# displayPresenter.SecondStep()

@@ -1,12 +1,12 @@
-from Ui import Affichage as Aff
+from Ui import UserUi as Aff
 import Mod.Entities.JsonPerso as Json
 
 class DisplayPresenter:
     def __init__(self):
         self.nom = ""
-        self.Nom = Aff.Affichage()
-        self.Nom.DemandeUser()
-        self.nom = self.Nom.giveUser()
+        self.Nom = Aff.UserUi()
+        self.Nom.enterUser()
+        self.nom = self.Nom.returnUser()
 
 
         print(self.nom)
@@ -37,6 +37,6 @@ class DisplayPresenter:
 
     def SecondStep(self):
         if self.valeur == False:
-            self.Nom.DemanderFilm()
+            self.Nom.enterMovie()
         else:
             print("tu es deja dans la base")
