@@ -3,7 +3,6 @@ from Presenters.DisplayPresenter import DisplayPresenter
 
 class UserUi:
     def __init__(self):
-        self.userName = ""
         self.displayPresenter = DisplayPresenter()
 
     def enterUser(self):
