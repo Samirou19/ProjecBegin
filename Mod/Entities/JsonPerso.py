@@ -6,7 +6,7 @@ class JsonPerso ():
 	# structure_json = r'/Users/samirotmani/Desktop/Test Ajout Film\structure.json'
 	# structure_json = structure_json.replace('\\', '/')
 
-	baseJson =  r'/Users/samirotmani/Desktop/Test Ajout Film\sBaseNoms.json'
+	baseJson =  r'/Users/hakim/Documents/Develop/Python/Samir_project/file_saved/sBaseNoms.json'
 	baseJson = baseJson.replace('\\', '/')
 
 
