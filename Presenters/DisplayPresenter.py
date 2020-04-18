@@ -1,6 +1,5 @@
-import Affichage as Aff
+from Ui import Affichage as Aff
 import Mod.Entities.JsonPerso as Json
-
 
 class DisplayPresenter:
     def __init__(self):
@@ -8,6 +7,8 @@ class DisplayPresenter:
         self.Nom = Aff.Affichage()
         self.Nom.DemandeUser()
         self.nom = self.Nom.giveUser()
+
+
         print(self.nom)
         JsonPerso = Json.JsonPerso()
         JsonPerso.CreerFichierJson()
