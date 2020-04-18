@@ -1,6 +1,5 @@
-
-#IN DOING
 from Ui.UserUi import UserUi
+#IN DOING
 
 userUi = UserUi()
 userUi.enterUser()

@@ -11,3 +11,4 @@ class DisplayPresenter:
             self.userUi.userAlreadyExist()
         else:
             print("no")
+            self.userUi.enterMovie()
