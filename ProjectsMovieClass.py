@@ -1,4 +1,4 @@
-from DisplayPresenter import DisplayPresenter
+from Presenters.DisplayPresenter import DisplayPresenter
 
 #DONE
 displayPresenter = DisplayPresenter()
