@@ -1,6 +1,9 @@
 from Presenters.DisplayPresenter import DisplayPresenter
 
 #DONE
+from Ui.Affichage import Affichage
+
+userUi = Affichage()
 displayPresenter = DisplayPresenter()
 
 
