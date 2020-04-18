@@ -1,14 +1,13 @@
 import Mod.Entities.UserDatabase as Json
 
+
 class DisplayPresenter:
     def __init__(self, view):
-        self.userUi = view
+        self.view = view
         self.userDb = Json.UserDatabase()
 
     def saveUser(self, userName):
         if self.userDb.isUserExist(userName):
-            print("yes")
-            self.userUi.userAlreadyExist()
+            self.view.userAlreadyExist()
         else:
-            print("no")
-            self.userUi.enterMovie()
+            self.view.enterMovie()

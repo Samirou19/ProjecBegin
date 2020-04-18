@@ -3,11 +3,11 @@ from Presenters.DisplayPresenter import DisplayPresenter
 
 class UserUi:
     def __init__(self):
-        self.displayPresenter = DisplayPresenter(self)
+        self.presenter = DisplayPresenter(self)
 
     def enterUser(self):
         userName = raw_input("Rentre ton user")
-        self.displayPresenter.saveUser(userName)
+        self.presenter.saveUser(userName)
 
     def userAlreadyExist(self):
         raw_input("L'utilisateur existe deja")
