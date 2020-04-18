@@ -1,6 +1,6 @@
 # import PresenterDisplay
 
-class Afficgit hage() :
+class Affichage() :
 
 	def __init__(self) : 
 		# self.continuer = "o"

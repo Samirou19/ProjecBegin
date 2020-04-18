@@ -1,10 +1,10 @@
 from DisplayPresenter import DisplayPresenter
 
-launch = DisplayPresenter()
+displayPresenter = DisplayPresenter()
 
 
 
-value = launch.retour()
+value = displayPresenter.retour()
 print(value)
-launch.SaveUser()
-launch.SecondStep()
+displayPresenter.SaveUser()
+displayPresenter.SecondStep()
