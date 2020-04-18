@@ -2,7 +2,7 @@ import Affichage as Aff
 import usersDataBase as DB
 import Mod.Entities.JsonPerso as Json
 
-class FirstStep() :
+class DisplayPresenter() :
 	def __init__(self) :
 		self.nom = ""
 		self.Nom = Aff.Affichage()
