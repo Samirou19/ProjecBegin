@@ -1,7 +1,7 @@
-from Presenters.DisplayPresenter import DisplayPresenter
-from Ui.UserUi import UserUi
 
 #IN DOING
+from Ui.UserUi import UserUi
+
 userUi = UserUi()
 userUi.enterUser()
 

@@ -1,12 +1,17 @@
+from Presenters.DisplayPresenter import DisplayPresenter
+
+
 class UserUi:
     def __init__(self):
-        self.user = ""
+        self.userName = ""
+        self.displayPresenter = DisplayPresenter()
 
     def enterUser(self):
-        input("Rentre ton user")
+        userName = raw_input("Rentre ton user")
+        self.displayPresenter.saveUser()
 
     def returnUser(self):
-        return self.user
+        return self.userName
 
     def enterMovie(self):
         self.film = input("Rentre ton Film")
