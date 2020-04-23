@@ -1,16 +1,18 @@
 class Display:
 
     def __init__(self):
-        self.Nom = ""
+        self.user = ""
+        self.continued = ""
+        self.movie = ""
 
     def ask_user(self):
         self.user = input("Rentre ton user")
 
     def continued(self):
-        self.continuer = input("Continuer?")
+        self.continued = input("Continuer?")
 
     def give_user(self):
-        return self.Nom
+        return self.user
 
     def put_movie(self):
         self.movie = input("Rentre ton Film")
