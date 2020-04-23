@@ -1,4 +1,4 @@
-import Display.Affichage as Aff
+import Display.display as Aff
 
 class Presenter (object):
 	# """docstring for """

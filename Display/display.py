@@ -1,6 +1,6 @@
 from AjoutsFilm.Presenter.PresenterDisplay import Presenter
 
-class Affichage() : 
+class display() :
 
 	def __init__(self) : 
 		# self.continuer = "o"
