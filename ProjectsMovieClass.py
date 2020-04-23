@@ -1,12 +1,4 @@
-import Mod.Entities.User as User
-import Mod.DataBase.usersDataBase as UserDB
-import Mod.Entities.Dossier as Dos
-import Mod.Entities.JsonPerso as JsonPerso
-import Mod.Entities.ListeFilm as ListeFilm
-import Affichage as Aff
-import PresenterDisplay as Present
-
-
+from Presenter import presenter as Present
 
 Lancement = Present.FirstStep()
 valeur = Lancement.retour()
