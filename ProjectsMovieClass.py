@@ -1,10 +1,23 @@
-from Presenter import presenter as Present
+from Display.Display import Display
 
-Lancement = Present.FirstStep()
-valeur = Lancement.retour()
-print(valeur)
-Lancement.SaveUser()
-Lancement.SecondStep()
+userUi = Display()
+userUi.enterUser()
+
+
+# TODO
+# displayPresenter = DisplayPresenter()
+# value = displayPresenter.retour()
+# print(value)
+# displayPresenter.SaveUser()
+# displayPresenter.SecondStep()
+
+
+# from Presenter import presenter as Present
+# Lancement = Present.FirstStep()
+# valeur = Lancement.retour()
+# print(valeur)
+# Lancement.SaveUser()
+# Lancement.SecondStep()
 
 # user1 = User.User(name = "User 1", Id = 1)
 # user2 = User.User(name = "User 2", Id = 2 )
@@ -32,4 +45,3 @@ Lancement.SecondStep()
 # Lancement.DemandeUser()
 # listeNom = Lancement.giveUser()
 # print(listeNom)
-
