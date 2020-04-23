@@ -1,13 +1,13 @@
-import Mod.Entities.UserDatabase as Json
+import Mod.Entities.CreateJson as Json
 
 
 class Presenter:
     def __init__(self, view):
         self.userUi = view
-        self.userDb = Json.UserDatabase()
+        self.userDb = Json.CreateJson()
 
-    def saveUser(self, userName):
-        if self.userDb.isUserExist(userName):
+    def saveuser(self, userName):
+        if self.userDb.isuserexist(userName):
             print("yes")
             self.userUi.userAlreadyExist()
         else:

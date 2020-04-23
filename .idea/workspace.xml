@@ -33,8 +33,10 @@
     <list default="true" id="10c2b034-9ffd-476c-8a3c-d7d5beb8fba7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Display/Display.py" beforeDir="false" afterPath="$PROJECT_DIR$/Display/Display.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Presenter/presenter.py" beforeDir="false" afterPath="$PROJECT_DIR$/Presenter/Presenter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectsMovieClass.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectsMovieClass.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mod/Entities/createFolder.py" beforeDir="false" afterPath="$PROJECT_DIR$/Mod/Entities/CreateFolder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mod/Entities/createJson.py" beforeDir="false" afterPath="$PROJECT_DIR$/Mod/Entities/CreateJson.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mod/Entities/listMovie.py" beforeDir="false" afterPath="$PROJECT_DIR$/Mod/Entities/ListMovie.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presenter/Presenter.py" beforeDir="false" afterPath="$PROJECT_DIR$/Presenter/Presenter.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,6 +95,28 @@
       <option name="CUSTOM_SETTINGS" value="false" />
       <option name="USE_OPTIONS" value="false" />
       <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ProjectsMovieClass" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="AjoutsFilm" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ProjectsMovieClass.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -176,6 +200,11 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.ProjectsMovieClass" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -217,6 +246,22 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="838" y="541" key="FileChooserDialogImpl/0.0.1792.1120@0.0.1792.1120" timestamp="1587288644387" />
+    <state width="1750" height="318" key="GridCell.Tab.0.bottom" timestamp="1587680701518">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1750" height="318" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1587680701518" />
+    <state width="1750" height="318" key="GridCell.Tab.0.center" timestamp="1587680701518">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1750" height="318" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1587680701518" />
+    <state width="1750" height="318" key="GridCell.Tab.0.left" timestamp="1587680701517">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1750" height="318" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1587680701517" />
+    <state width="1750" height="318" key="GridCell.Tab.0.right" timestamp="1587680701518">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1750" height="318" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1587680701518" />
     <state x="397" y="199" key="SettingsEditor" timestamp="1587288874083">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
@@ -230,5 +275,8 @@
     </state>
     <state x="100" y="100" width="1592" height="920" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1587222950285" />
     <state x="341" y="503" width="1592" height="920" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1792.1097@0.23.1792.1097" timestamp="1587225075783" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/AjoutsFilm$ProjectsMovieClass.coverage" NAME="ProjectsMovieClass Coverage Results" MODIFIED="1587680681366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

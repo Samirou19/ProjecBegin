@@ -7,7 +7,7 @@ class Display:
 
     def enterUser(self):
         userName = input("Rentre ton user")
-        self.displayPresenter.saveUser(userName)
+        self.displayPresenter.saveuser(userName)
 
     def userAlreadyExist(self):
         input("L'utilisateur existe deja")
