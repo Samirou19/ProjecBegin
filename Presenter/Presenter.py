@@ -1,10 +1,13 @@
 import Mod.Entities.CreateJson as Json
-
+import Mod.Entities.ListMovie as Movie
+import Mod.Entities.CreateJsonMovie as JsonMovie
 
 class Presenter:
     def __init__(self, view):
         self.userUi = view
         self.userDb = Json.CreateJson()
+        self.listefilm = Movie.listMovie()
+        self.jsonmovie = JsonMovie.CreateJsonMovie()
 
     def saveuser(self, userName):
         if self.userDb.isuserexist(userName):
@@ -12,7 +15,16 @@ class Presenter:
             self.userUi.userAlreadyExist()
         else:
             print("no")
+            self.userDb.createnewjson()
+            self.userDb.updatefichierjson(userName)
             self.userUi.enterMovie()
+
+    def savefilm(self, film, note):
+        self.listefilm.InserFilm(film, note)
+        listefilm = self.listefilm.getlistemovie()
+        print(listefilm)
+        self.jsonmovie.updatemoviejson(listefilm)
+        print("enregistrement effectué")
 
 # class presenter():
 #

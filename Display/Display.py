@@ -14,10 +14,13 @@ class Display:
         self.enterMovie()
 
     def enterMovie(self):
-        input("Rentre ton Film")
+        film = input("Rentre ton Film")
+        note = input("rentre ta note")
+        self.displayPresenter.savefilm(film, note)
 
     def returnUser(self):
         return self.userName
+
 
 # class Display:
 #

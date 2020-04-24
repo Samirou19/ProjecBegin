@@ -2,37 +2,26 @@ import json
 import os
 
 
-class CreateJson():
-    baseJson = r'/Users/samirotmani/Documents/Samir Otmani/R&d/Python/Projets/AjoutsFilm/Mod/dataBase/sBaseNoms.json'
-    baseJson = baseJson.replace('\\', '/')
+class CreateJsonMovie():
+    moviejson = r'/Users/samirotmani/Documents/Samir Otmani/R&d/Python/Projets/AjoutsFilm/Mod/dataBase/MovieFile.json'
+    moviejson = moviejson.replace('\\', '/')
 
-    def isuserexist(self, name):
-        userJson = self.readJsonUser()
-        if name in userJson:
-            return True
-        return False
 
-    def readJsonUser(self):
-        fichier_json = self.baseJson
-        with open(fichier_json, 'r+') as p:
-            data = json.load(p)
-            temp = (data)
-            return temp
 
     def createnewjson(self):
-        fichier_json = self.baseJson
+        fichier_json = self.moviejson
         if not os.path.isfile(fichier_json):
             print("ton fichier existe pas et nous allons le creer")
             with open(fichier_json, 'a') as j:
                 json.dump({}, j)
 
-    def updatefichierjson(self, name):
-        fichier_json = self.baseJson
+    def updatemoviejson(self, listemovie):
+        fichier_json = self.moviejson
         with open(fichier_json, 'r+') as a:
             data = json.load(a)
-            data.update({name: "test"})
+            data.update(listemovie)
             a.seek(0)
-            json.dump({name: "test"}, a)
+            json.dump(listemovie, a)
         print('update du fichier Json')
 
 
