@@ -6,8 +6,8 @@ class Display:
         self.displayPresenter = Presenter(self)
 
     def enterUser(self):
-        userName = input("Rentre ton user")
-        self.displayPresenter.saveuser(userName)
+        self.username = input("Rentre ton user")
+        self.displayPresenter.saveuser(self.username)
 
     def userAlreadyExist(self):
         input("L'utilisateur existe deja")
@@ -16,11 +16,10 @@ class Display:
     def enterMovie(self):
         film = input("Rentre ton Film")
         note = input("rentre ta note")
-        self.displayPresenter.savefilm(film, note)
+        self.displayPresenter.savefilm(film, note, self.username)
 
     def returnUser(self):
-        return self.userName
-
+        return self.username
 
 # class Display:
 #

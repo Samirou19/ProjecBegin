@@ -32,7 +32,7 @@ class CreateJson():
             data = json.load(a)
             data.update({name: "test"})
             a.seek(0)
-            json.dump({name: "test"}, a)
+            json.dump(data, a)
         print('update du fichier Json')
 
 

@@ -21,7 +21,7 @@ class CreateJsonMovie():
             data = json.load(a)
             data.update(listemovie)
             a.seek(0)
-            json.dump(listemovie, a)
+            json.dump(data, a)
         print('update du fichier Json')
 
 
