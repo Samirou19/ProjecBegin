@@ -1,5 +1,4 @@
 class listMovie():
-    listeUserlisteUser = {}
 
     def __init__(self, titreDefilm='Default', note=1):
         self.ListeFilm = {}

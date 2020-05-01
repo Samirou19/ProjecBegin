@@ -7,26 +7,33 @@ class Presenter:
     def __init__(self, view):
         self.userUi = view
         self.userDb = Json.CreateJson()
-        self.listefilm = Movie.listMovie()
-        self.jsonmovie = JsonMovie.CreateJsonMovie()
+        self.list_movie = Movie.listMovie()
+        self.json_movie = JsonMovie.CreateJsonMovie()
 
     def saveuser(self, username):
         if self.userDb.isuserexist(username):
-            print("yes")
             self.userUi.userAlreadyExist()
 
         else:
-            print("no")
             self.userDb.createnewjson()
             self.userDb.updatefichierjson(username)
             self.userUi.enterMovie()
 
+    def entermovie(self):
+        self.userUi.enterMovie()
+
+    def initialize(self):
+        self.userUi.enterUser()
+
+    def getlistemovie (self) :
+        getlistmovie = self.json_movie.readlistmovie()
+        print(getlistmovie)
+
     def savefilm(self, film, note, user):
-        self.listefilm.inserFilm(film, note)
-        listefilm = self.listefilm.getlistemovie()
-        print(listefilm)
-        self.listefilm.inseruserfilm(user)
-        self.jsonmovie.updatemoviejson(listefilm)
+        self.list_movie.inserFilm(film, note)
+        list_movie = self.list_movie.getlistemovie()
+        self.list_movie.inseruserfilm(user)
+        self.json_movie.updatemoviejson(list_movie)
         print("enregistrement film effectue")
 
 # class presenter():

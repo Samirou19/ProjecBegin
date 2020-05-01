@@ -32,7 +32,12 @@
   <component name="ChangeListManager">
     <list default="true" id="10c2b034-9ffd-476c-8a3c-d7d5beb8fba7" name="Default Changelist" comment="ok">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectsMovieClass.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectsMovieClass.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Display/Display.py" beforeDir="false" afterPath="$PROJECT_DIR$/Display/Display.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mod/Entities/CreateJsonMovie.py" beforeDir="false" afterPath="$PROJECT_DIR$/Mod/Entities/CreateJsonMovie.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mod/Entities/ListMovie.py" beforeDir="false" afterPath="$PROJECT_DIR$/Mod/Entities/ListMovie.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mod/dataBase/MovieFile.json" beforeDir="false" afterPath="$PROJECT_DIR$/Mod/dataBase/MovieFile.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mod/dataBase/sBaseNoms.json" beforeDir="false" afterPath="$PROJECT_DIR$/Mod/dataBase/sBaseNoms.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presenter/Presenter.py" beforeDir="false" afterPath="$PROJECT_DIR$/Presenter/Presenter.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +126,8 @@
       <workItem from="1587421896509" duration="2139000" />
       <workItem from="1587664310931" duration="557000" />
       <workItem from="1587906817039" duration="4153000" />
-      <workItem from="1588006217073" duration="1110000" />
+      <workItem from="1588006217073" duration="5046000" />
+      <workItem from="1588102219411" duration="4836000" />
     </task>
     <task id="LOCAL-00001" summary="ok">
       <created>1587767523583</created>
@@ -144,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588007887649</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="ok">
+      <created>1588008798691</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1588008798691</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,25 +192,25 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="838" y="541" key="FileChooserDialogImpl/0.0.1792.1120@0.0.1792.1120" timestamp="1587288644387" />
-    <state width="1750" height="318" key="GridCell.Tab.0.bottom" timestamp="1587910876744">
+    <state width="1750" height="318" key="GridCell.Tab.0.bottom" timestamp="1588324763299">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="318" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1587910876744" />
+    <state width="1750" height="318" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1588324763299" />
     <state width="1750" height="392" key="GridCell.Tab.0.bottom/0.23.1792.1097@0.23.1792.1097" timestamp="1587869920271" />
-    <state width="1750" height="318" key="GridCell.Tab.0.center" timestamp="1587910876743">
+    <state width="1750" height="318" key="GridCell.Tab.0.center" timestamp="1588324763298">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="318" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1587910876743" />
+    <state width="1750" height="318" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1588324763298" />
     <state width="1750" height="392" key="GridCell.Tab.0.center/0.23.1792.1097@0.23.1792.1097" timestamp="1587869920270" />
-    <state width="1750" height="318" key="GridCell.Tab.0.left" timestamp="1587910876742">
+    <state width="1750" height="318" key="GridCell.Tab.0.left" timestamp="1588324763298">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="318" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1587910876742" />
+    <state width="1750" height="318" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1588324763298" />
     <state width="1750" height="392" key="GridCell.Tab.0.left/0.23.1792.1097@0.23.1792.1097" timestamp="1587869920269" />
-    <state width="1750" height="318" key="GridCell.Tab.0.right" timestamp="1587910876743">
+    <state width="1750" height="318" key="GridCell.Tab.0.right" timestamp="1588324763299">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="318" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1587910876743" />
+    <state width="1750" height="318" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1588324763299" />
     <state width="1750" height="392" key="GridCell.Tab.0.right/0.23.1792.1097@0.23.1792.1097" timestamp="1587869920270" />
     <state width="1750" height="392" key="GridCell.Tab.1.bottom" timestamp="1587869920272">
       <screen x="0" y="23" width="1792" height="1097" />
@@ -250,6 +263,6 @@
     <state x="561" y="251" key="search.everywhere.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1587743244291" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/AjoutsFilm$ProjectsMovieClass.coverage" NAME="ProjectsMovieClass Coverage Results" MODIFIED="1587910876734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/AjoutsFilm$ProjectsMovieClass.coverage" NAME="ProjectsMovieClass Coverage Results" MODIFIED="1588324763289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

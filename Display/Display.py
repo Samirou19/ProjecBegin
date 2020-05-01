@@ -10,8 +10,9 @@ class Display:
         self.displayPresenter.saveuser(self.username)
 
     def userAlreadyExist(self):
-        input("L'utilisateur existe deja")
-        self.enterMovie()
+        print("L'utilisateur existe deja")
+        self.displayPresenter.getlistemovie()
+        self.displayPresenter.initialize()
 
     def enterMovie(self):
         film = input("Rentre ton Film")
