@@ -11,7 +11,7 @@ class Display:
 
     def userAlreadyExist(self):
         print("L'utilisateur existe deja")
-        self.displayPresenter.getlistemovie()
+        self.displayPresenter.getlistemovie(self.username)
         self.displayPresenter.initialize()
 
     def enterMovie(self):

@@ -25,9 +25,12 @@ class Presenter:
     def initialize(self):
         self.userUi.enterUser()
 
-    def getlistemovie (self) :
-        getlistmovie = self.json_movie.readlistmovie()
-        print(getlistmovie)
+    def getlistemovie(self, username):
+        self.json_movie.readlistmovie()
+        getlistmovie = self.json_movie.returnlistemovie()
+        for key, values in getlistmovie[username].items():
+            print("ton titre de film est {0}".format(key))
+            print("sa note est {0}".format(values))
 
     def savefilm(self, film, note, user):
         self.list_movie.inserFilm(film, note)

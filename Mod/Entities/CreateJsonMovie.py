@@ -25,9 +25,11 @@ class CreateJsonMovie():
     def readlistmovie(self):
         fichier_json = self.moviejson
         with open(fichier_json, 'r+') as p:
-            data = json.load(p)
-            temp = (data)
-            return temp
+            self.listmovie = json.load(p)
+
+    def returnlistemovie(self):
+        return self.listmovie
+
 # class createJson():
 #     baseJson = r'/Users/samirotmani/Desktop/Test Ajout Film\sBaseNoms.json'
 #     baseJson = baseJson.replace('\\', '/')
