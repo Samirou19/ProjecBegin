@@ -2,44 +2,24 @@ from Presenter.Presenter import Presenter
 
 
 class Display:
+    username: str
+
     def __init__(self):
         self.displayPresenter = Presenter(self)
 
-    def enterUser(self):
-        self.username = input("Rentre ton user")
-        self.displayPresenter.saveuser(self.username)
+    def enter_user(self):
+        self.username = input("Enter your user")
+        self.displayPresenter.save_user(self.username)
 
-    def userAlreadyExist(self):
-        print("L'utilisateur existe deja")
-        self.displayPresenter.getlistemovie(self.username)
+    def user_already_exist(self):
+        print("User already exist")
+        self.displayPresenter.get_list_movie(self.username)
         self.displayPresenter.initialize()
 
-    def enterMovie(self):
-        film = input("Rentre ton Film")
-        note = input("rentre ta note")
-        self.displayPresenter.savefilm(film, note, self.username)
+    def enter_movie(self):
+        film = input("Enter your movie")
+        note = input("Enter your note")
+        self.displayPresenter.save_movie(film, note, self.username)
 
-    def returnUser(self):
+    def return_user(self):
         return self.username
-
-# class Display:
-#
-#     def __init__(self):
-#         self.user = ""
-#         self.continued = ""
-#         self.movie = ""
-#
-#     def ask_user(self):
-#         self.user = input("Rentre ton user")
-#
-#     def continued(self):
-#         self.continued = input("Continuer?")
-#
-#     def give_user(self):
-#         return self.user
-#
-#     def put_movie(self):
-#         self.movie = input("Rentre ton Film")
-#
-#     def insert_note(self):
-#         pass

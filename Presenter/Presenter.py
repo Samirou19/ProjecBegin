@@ -1,79 +1,42 @@
-import Mod.Entities.CreateJson as Json
+import Mod.dataBase.JsonUser as Json
 import Mod.Entities.ListMovie as Movie
-import Mod.Entities.CreateJsonMovie as JsonMovie
+import Mod.dataBase.JsonMovie as JsonMovie
+import Mod.Entities.User as User
 
 
 class Presenter:
     def __init__(self, view):
         self.userUi = view
-        self.userDb = Json.CreateJson()
-        self.list_movie = Movie.listMovie()
-        self.json_movie = JsonMovie.CreateJsonMovie()
+        self.userDb = Json.JsonUser()
+        self.user = User.User()
+        self.list_movie = Movie.ListMovie()
+        self.json_movie = JsonMovie.JsonMovie()
 
-    def saveuser(self, username):
-        if self.userDb.isuserexist(username):
-            self.userUi.userAlreadyExist()
+    def save_user(self, username):
+        if self.user.is_user_exist(username):
+            self.userUi.user_already_exist()
 
         else:
-            self.userDb.createnewjson()
-            self.userDb.updatefichierjson(username)
-            self.userUi.enterMovie()
+            self.userDb.create_new_json()
+            self.userDb.update_file_json(username)
+            self.userUi.enter_movie()
 
-    def entermovie(self):
-        self.userUi.enterMovie()
+    def enter_movie(self):
+        self.userUi.enter_movie()
 
     def initialize(self):
-        self.userUi.enterUser()
+        self.userUi.enter_user()
 
-    def getlistemovie(self, username):
-        self.json_movie.readlistmovie()
-        getlistmovie = self.json_movie.returnlistemovie()
-        for key, values in getlistmovie[username].items():
+    def get_list_movie(self, username):
+        self.json_movie.read_list_movie()
+        get_list_movie = self.json_movie.return_list_movie()
+        for key, values in get_list_movie[username].items():
             print("ton titre de film est {0}".format(key))
             print("sa note est {0}".format(values))
 
-    def savefilm(self, film, note, user):
-        self.list_movie.inserFilm(film, note)
-        list_movie = self.list_movie.getlistemovie()
-        self.list_movie.inseruserfilm(user)
-        self.json_movie.updatemoviejson(list_movie)
+    def save_movie(self, film, note, user):
+        self.list_movie.insert_movie(film, note)
+        list_movie = self.list_movie.get_list_movie()
+        self.list_movie.insert_user_movie(user)
+        self.json_movie.update_movie_json(list_movie)
         print("enregistrement film effectue")
-
-# class presenter():
-#
-#     def __init__(self):
-#         self.nom = ""
-#         self.Nom = Aff.Affichage()
-#         self.Nom.DemandeUser()
-#         self.nom = self.Nom.giveUser()
-#         print(self.nom)
-#         JsonPerso = Json.JsonPerso()
-#         JsonPerso.CreerFichierJson()
-#         JsonPerso.LireJsonUser()
-#         self.BaseCheck = JsonPerso.LireJsonUser()
-#         if self.nom in self.BaseCheck:
-#             self.valeur = True
-#         else:
-#             self.valeur = False
-#
-#     def retour(self):
-#         return self.valeur
-#         print(self.valeur)
-#
-#     def SaveUser(self):
-#         self.ListeUser = {}
-#         self.ListeUser[1] = self.nom
-#         if self.valeur == False:
-#             self.base = Json.JsonPerso()
-#             print(self.base)
-#             print(self.ListeUser)
-#             self.base.UpdateFichierJson(self.ListeUser)
-#             ("Enregistrement du user")
-#         else:
-#             ("Nein")
-#
-#     def SecondStep(self):
-#         if self.valeur == False:
-#             self.Nom.DemanderFilm()
-#         else:
-#             print("tu es deja dans la base")

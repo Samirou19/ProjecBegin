@@ -1,18 +1,18 @@
-class listMovie():
+class ListMovie:
 
-    def __init__(self, titreDefilm='Default', note=1):
-        self.ListeFilm = {}
-        self.listeUser = {}
-        self.titreDefilm = titreDefilm
+    def __init__(self, title_movie='Default', note=1):
+        self.list_movie = {}
+        self.list_user = {}
+        self.title_movie = title_movie
         self.note = note
 
-    def inserFilm(self, film, note):
-        self.ListeFilm[film] = note
+    def insert_movie(self, film, note):
+        self.list_movie[film] = note
 
-    def inseruserfilm(self, user):
-        self.listeUser[user] = self.ListeFilm
-        a = self.listeUser
+    def insert_user_movie(self, user):
+        self.list_user[user] = self.list_movie
+        a = self.list_user
         print(a)
 
-    def getlistemovie(self):
-        return self.listeUser
+    def get_list_movie(self):
+        return self.list_user
