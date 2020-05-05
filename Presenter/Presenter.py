@@ -15,7 +15,7 @@ class Presenter:
     def save_user(self, username):
         if self.user.is_user_exist(username):
             self.userUi.user_already_exist()
-
+            self.userUi.add_user()
         else:
             self.userDb.create_new_json()
             self.userDb.update_file_json(username)
@@ -24,8 +24,21 @@ class Presenter:
     def enter_movie(self):
         self.userUi.enter_movie()
 
-    def initialize(self):
-        self.userUi.enter_user()
+    def continued_movie(self, response):
+        if response == "y":
+            self.userUi.enter_movie()
+        elif response == "n":
+            self.userUi.thanks()
+        else:
+            self.userUi.add_movie()
+
+    def continued_user(self, response):
+        if response == "y":
+            self.userUi.enter_user()
+        elif response == "n":
+            self.userUi.thanks()
+        else:
+            self.userUi.add_user()
 
     def get_list_movie(self, username):
         self.json_movie.read_list_movie()
@@ -40,3 +53,5 @@ class Presenter:
         self.list_movie.insert_user_movie(user)
         self.json_movie.update_movie_json(list_movie)
         print("enregistrement film effectue")
+        self.userUi.add_movie()
+        self.userUi.add_user()

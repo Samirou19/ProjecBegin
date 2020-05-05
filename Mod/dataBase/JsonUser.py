@@ -6,12 +6,6 @@ class JsonUser:
     baseJson = r'/Users/samirotmani/Documents/Samir Otmani/R&d/Python/Projets/AjoutsFilm/Mod/dataBase/sBaseNoms.json'
     baseJson = baseJson.replace('\\', '/')
 
-    def is_user_exist(self, name):
-        user_json = self.read_json_user()
-        if name in user_json:
-            return True
-        return False
-
     def read_json_user(self):
         file_json = self.baseJson
         with open(file_json, 'r+') as p:
