@@ -30,12 +30,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10c2b034-9ffd-476c-8a3c-d7d5beb8fba7" name="Default Changelist" comment="V11">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/samirotmani.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/samirotmani.xml" afterDir="false" />
+    <list default="true" id="10c2b034-9ffd-476c-8a3c-d7d5beb8fba7" name="Default Changelist" comment="V12">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Display/Display.py" beforeDir="false" afterPath="$PROJECT_DIR$/Display/Display.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mod/Entities/User.py" beforeDir="false" afterPath="$PROJECT_DIR$/Mod/Entities/User.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mod/dataBase/JsonUser.py" beforeDir="false" afterPath="$PROJECT_DIR$/Mod/dataBase/JsonUser.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Mod/dataBase/MovieFile.json" beforeDir="false" afterPath="$PROJECT_DIR$/Mod/dataBase/MovieFile.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Mod/dataBase/sBaseNoms.json" beforeDir="false" afterPath="$PROJECT_DIR$/Mod/dataBase/sBaseNoms.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Presenter/Presenter.py" beforeDir="false" afterPath="$PROJECT_DIR$/Presenter/Presenter.py" afterDir="false" />
@@ -129,7 +126,7 @@
       <workItem from="1587906817039" duration="4153000" />
       <workItem from="1588006217073" duration="5046000" />
       <workItem from="1588102219411" duration="11518000" />
-      <workItem from="1588626028130" duration="16648000" />
+      <workItem from="1588626028130" duration="18155000" />
     </task>
     <task id="LOCAL-00001" summary="ok">
       <created>1587767523583</created>
@@ -180,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588644181720</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="V12">
+      <created>1588693305678</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1588693305678</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,7 +207,8 @@
     <MESSAGE value="V9" />
     <MESSAGE value="V10" />
     <MESSAGE value="V11" />
-    <option name="LAST_COMMIT_MESSAGE" value="V11" />
+    <MESSAGE value="V12" />
+    <option name="LAST_COMMIT_MESSAGE" value="V12" />
   </component>
   <component name="WindowStateProjectService">
     <state x="464" y="222" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1587761213602">
@@ -222,25 +227,25 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="838" y="541" key="FileChooserDialogImpl/0.0.1792.1120@0.0.1792.1120" timestamp="1587288644387" />
-    <state width="1750" height="318" key="GridCell.Tab.0.bottom" timestamp="1588693282136">
+    <state width="1750" height="318" key="GridCell.Tab.0.bottom" timestamp="1588779894642">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="318" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1588693282136" />
+    <state width="1750" height="318" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1588779894642" />
     <state width="1750" height="392" key="GridCell.Tab.0.bottom/0.23.1792.1097@0.23.1792.1097" timestamp="1587869920271" />
-    <state width="1750" height="318" key="GridCell.Tab.0.center" timestamp="1588693282135">
+    <state width="1750" height="318" key="GridCell.Tab.0.center" timestamp="1588779894641">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="318" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1588693282135" />
+    <state width="1750" height="318" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1588779894641" />
     <state width="1750" height="392" key="GridCell.Tab.0.center/0.23.1792.1097@0.23.1792.1097" timestamp="1587869920270" />
-    <state width="1750" height="318" key="GridCell.Tab.0.left" timestamp="1588693282134">
+    <state width="1750" height="318" key="GridCell.Tab.0.left" timestamp="1588779894640">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="318" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1588693282134" />
+    <state width="1750" height="318" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1588779894640" />
     <state width="1750" height="392" key="GridCell.Tab.0.left/0.23.1792.1097@0.23.1792.1097" timestamp="1587869920269" />
-    <state width="1750" height="318" key="GridCell.Tab.0.right" timestamp="1588693282135">
+    <state width="1750" height="318" key="GridCell.Tab.0.right" timestamp="1588779894641">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="318" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1588693282135" />
+    <state width="1750" height="318" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1588779894641" />
     <state width="1750" height="392" key="GridCell.Tab.0.right/0.23.1792.1097@0.23.1792.1097" timestamp="1587869920270" />
     <state width="1750" height="392" key="GridCell.Tab.1.bottom" timestamp="1587869920272">
       <screen x="0" y="23" width="1792" height="1097" />
@@ -297,6 +302,6 @@
     <state x="561" y="251" key="search.everywhere.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1587743244291" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/AjoutsFilm$ProjectsMovieClass.coverage" NAME="ProjectsMovieClass Coverage Results" MODIFIED="1588693282129" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/AjoutsFilm$ProjectsMovieClass.coverage" NAME="ProjectsMovieClass Coverage Results" MODIFIED="1588780197461" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

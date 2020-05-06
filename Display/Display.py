@@ -28,7 +28,8 @@ class Display:
         response = input("Add a user y/n")
         self.displayPresenter.continued_user(response)
 
-    def thanks(self):
+    @staticmethod
+    def thanks():
         print("Thanks for playing")
 
     def return_user(self):

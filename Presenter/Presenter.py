@@ -28,7 +28,7 @@ class Presenter:
         if response == "y":
             self.userUi.enter_movie()
         elif response == "n":
-            self.userUi.thanks()
+            self.userUi.add_user()
         else:
             self.userUi.add_movie()
 
@@ -54,4 +54,3 @@ class Presenter:
         self.json_movie.update_movie_json(list_movie)
         print("enregistrement film effectue")
         self.userUi.add_movie()
-        self.userUi.add_user()
