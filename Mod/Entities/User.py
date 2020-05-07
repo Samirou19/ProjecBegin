@@ -13,4 +13,4 @@ class User:
         return False
 
     def get_user(self):
-        return self.file_json.read_json_user
+        return self.self.user_json

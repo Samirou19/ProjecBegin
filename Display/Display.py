@@ -20,13 +20,22 @@ class Display:
         note = input("Enter your note")
         self.displayPresenter.save_movie(film, note, self.username)
 
-    def add_movie(self):
+    def modify_movie(self):
+        film = input("(modification)add your movie")
+        note = input("(modification)Enter your note")
+        self.displayPresenter.modify_user(film, note)
+
+    def question_add_movie(self):
         response = input("Add a movie y/n")
         self.displayPresenter.continued_movie(response)
 
     def add_user(self):
         response = input("Add a user y/n")
         self.displayPresenter.continued_user(response)
+
+    def question_modification(self):
+        response = input("You want to modify y/n")
+        self.displayPresenter.modification(response)
 
     @staticmethod
     def thanks():
