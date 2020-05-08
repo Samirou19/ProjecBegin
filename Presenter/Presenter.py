@@ -19,8 +19,9 @@ class Presenter:
 
         else:
             self.userDb.create_new_json()
-            self.userDb.update_file_json(username)
             self.userUi.enter_movie()
+            self.userDb.update_file_json(username)
+            self.userUi.add_user()
 
     def enter_movie(self):
         self.userUi.enter_movie()
@@ -29,7 +30,7 @@ class Presenter:
         if response == "y":
             self.userUi.enter_movie()
         elif response == "n":
-            self.userUi.add_user()
+            self.userUi.thanks()
         else:
             self.userUi.enter_movie()
 
@@ -59,16 +60,17 @@ class Presenter:
             print("ton titre de film est {0}".format(key))
             print("sa note est {0}".format(values))
 
-    def modify_user(self, film, note):
+    def construct_list_movie(self, film, note, user):
+        self.list_movie.insert_movie(film, note)
+        self.list_movie.insert_user_movie(user)
+        list_movie = self.list_movie.get_list_movie()
+        self.json_movie.update_movie_json(list_movie)
+        self.userUi.question_add_movie()
+        print("enregistrement film effectue")
+
+    def modify_user(self, film, note, user):
         self.list_movie.insert_movie(film, note)
         list_movie = self.list_movie.get_return_movie()
         self.userUi.question_modification()
-        print(list_movie)
-
-    def save_movie(self, film, note, user):
-        self.list_movie.insert_movie(film, note)
-        list_movie = self.list_movie.get_list_movie()
         self.list_movie.insert_user_movie(user)
         self.json_movie.update_movie_json(list_movie)
-        print("enregistrement film effectue")
-        self.userUi.question_add_movie()

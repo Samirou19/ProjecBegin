@@ -18,12 +18,12 @@ class Display:
     def enter_movie(self):
         film = input("Enter your movie")
         note = input("Enter your note")
-        self.displayPresenter.save_movie(film, note, self.username)
+        self.displayPresenter.construct_list_movie(film, note, self.username)
 
     def modify_movie(self):
         film = input("(modification)add your movie")
         note = input("(modification)Enter your note")
-        self.displayPresenter.modify_user(film, note)
+        self.displayPresenter.modify_user(film, note, self.username)
 
     def question_add_movie(self):
         response = input("Add a movie y/n")
