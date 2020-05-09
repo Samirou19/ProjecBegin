@@ -5,7 +5,7 @@ class ListMovie:
         self.list_user = {}
 
     def insert_movie(self, film, note):
-        self.list_movie[film] =  note
+        self.list_movie[film] = note
 
     def insert_user_movie(self, user):
         self.list_user[user] = self.list_movie

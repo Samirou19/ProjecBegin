@@ -10,7 +10,6 @@ class JsonMovie:
     def create_new_json(self):
         file_json = self.movie_json
         if not os.path.isfile(file_json):
-            print("ton fichier existe pas et nous allons le creer")
             with open(file_json, 'a') as j:
                 json.dump({}, j)
 
@@ -21,7 +20,6 @@ class JsonMovie:
             data.update(list_movie)
             a.seek(0)
             json.dump(data, a)
-        print('update du fichier Json')
 
     def read_list_movie(self):
         file_json = self.movie_json

@@ -9,7 +9,6 @@ class Presenter:
         self.userUi = view
         self.userDb = Json.JsonUser()
         self.user = User.User()
-        self.list_movie = Movie.ListMovie()
         self.json_movie = JsonMovie.JsonMovie()
 
     def save_user(self, username):
@@ -18,10 +17,10 @@ class Presenter:
             self.userUi.question_modification()
 
         else:
+            self.list_movie = Movie.ListMovie()
             self.userDb.create_new_json()
             self.userUi.enter_movie()
             self.userDb.update_file_json(username)
-            self.userUi.add_user()
 
     def enter_movie(self):
         self.userUi.enter_movie()
@@ -30,7 +29,7 @@ class Presenter:
         if response == "y":
             self.userUi.enter_movie()
         elif response == "n":
-            self.userUi.thanks()
+            self.userUi.add_user()
         else:
             self.userUi.enter_movie()
 
@@ -66,11 +65,11 @@ class Presenter:
         list_movie = self.list_movie.get_list_movie()
         self.json_movie.update_movie_json(list_movie)
         self.userUi.question_add_movie()
-        print("enregistrement film effectue")
 
     def modify_user(self, film, note, user):
-        self.list_movie.insert_movie(film, note)
-        list_movie = self.list_movie.get_return_movie()
+        list_movie = self.json_movie.return_list_movie()
+        if film in list_movie[user].keys():
+            self.list_movie = Movie.ListMovie()
+            list_movie = self.list_movie.insert_movie(film, note)
+            self.json_movie.update_movie_json(list_movie)
         self.userUi.question_modification()
-        self.list_movie.insert_user_movie(user)
-        self.json_movie.update_movie_json(list_movie)
