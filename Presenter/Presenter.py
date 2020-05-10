@@ -43,14 +43,11 @@ class Presenter:
 
     def modification(self, response):
         if response == "y":
-            self.userUi.modify_movie()
+            self.userUi.modify_user()
         elif response == "n":
             self.userUi.add_user()
         else:
-            self.userUi.question_add_movie()
-
-    def modification_note(self):
-        pass
+            self.userUi.modify_user()
 
     def get_list_movie(self, username):
         self.json_movie.read_list_movie()
@@ -66,10 +63,19 @@ class Presenter:
         self.json_movie.update_movie_json(list_movie)
         self.userUi.question_add_movie()
 
-    def modify_user(self, film, note, user):
-        list_movie = self.json_movie.return_list_movie()
-        if film in list_movie[user].keys():
-            self.list_movie = Movie.ListMovie()
-            list_movie = self.list_movie.insert_movie(film, note)
-            self.json_movie.update_movie_json(list_movie)
+    def modify_movie_present(self, film, username):
+        list_movie_historic = self.json_movie.return_list_movie()
+        if film in list_movie_historic[username].keys():
+            self.userUi.display_movie(film)
+        else:
+            self.userUi.modify_add_note(film)
+
+    def modify_movie_note(self, film, note, user):
+        list_movie_historic = self.json_movie.return_list_movie()
+        list_movie_historic_user = list_movie_historic[user]
+        list_movie_modified = Movie.ListMovie()
+        list_movie_modified.insert_movie(film, note)
+        list_movie_modified = list_movie_modified.get_return_movie()
+        list_movie_historic_user.update(list_movie_modified)
+        self.json_movie.modification_movie_json(list_movie_historic)
         self.userUi.question_modification()

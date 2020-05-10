@@ -26,5 +26,10 @@ class JsonMovie:
         with open(file_json, 'r+') as p:
             self.list_movie = json.load(p)
 
+    def modification_movie_json(self, list_movie):
+        file_json = self.movie_json
+        with open(file_json, 'w') as d:
+            json.dump(list_movie, d)
+
     def return_list_movie(self):
         return self.list_movie
