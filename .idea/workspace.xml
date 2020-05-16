@@ -30,12 +30,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10c2b034-9ffd-476c-8a3c-d7d5beb8fba7" name="Default Changelist" comment="V15">
+    <list default="true" id="10c2b034-9ffd-476c-8a3c-d7d5beb8fba7" name="Default Changelist" comment="V16">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Display/Display.py" beforeDir="false" afterPath="$PROJECT_DIR$/Display/Display.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mod/dataBase/JsonMovie.py" beforeDir="false" afterPath="$PROJECT_DIR$/Mod/dataBase/JsonMovie.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Mod/dataBase/MovieFile.json" beforeDir="false" afterPath="$PROJECT_DIR$/Mod/dataBase/MovieFile.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Presenter/Presenter.py" beforeDir="false" afterPath="$PROJECT_DIR$/Presenter/Presenter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mod/dataBase/sBaseNoms.json" beforeDir="false" afterPath="$PROJECT_DIR$/Mod/dataBase/sBaseNoms.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +124,8 @@
       <workItem from="1587906817039" duration="4153000" />
       <workItem from="1588006217073" duration="5046000" />
       <workItem from="1588102219411" duration="11518000" />
-      <workItem from="1588626028130" duration="71946000" />
+      <workItem from="1588626028130" duration="73133000" />
+      <workItem from="1589224796056" duration="2184000" />
     </task>
     <task id="LOCAL-00001" summary="ok">
       <created>1587767523583</created>
@@ -212,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588997465942</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="V16">
+      <created>1589155073819</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1589155073820</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,7 +245,8 @@
     <MESSAGE value="V13" />
     <MESSAGE value="V14" />
     <MESSAGE value="V15" />
-    <option name="LAST_COMMIT_MESSAGE" value="V15" />
+    <MESSAGE value="V16" />
+    <option name="LAST_COMMIT_MESSAGE" value="V16" />
   </component>
   <component name="WindowStateProjectService">
     <state x="464" y="222" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1587761213602">
@@ -258,25 +265,29 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="838" y="541" key="FileChooserDialogImpl/0.0.1792.1120@0.0.1792.1120" timestamp="1587288644387" />
-    <state width="1750" height="318" key="GridCell.Tab.0.bottom" timestamp="1589154982550">
-      <screen x="0" y="0" width="1792" height="1120" />
+    <state width="1878" height="318" key="GridCell.Tab.0.bottom" timestamp="1589616749267">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1750" height="318" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1589154982550" />
+    <state width="1878" height="318" key="GridCell.Tab.0.bottom/-1792.-40.1792.1120/0.0.1920.1080@0.0.1920.1080" timestamp="1589616749267" />
+    <state width="1750" height="318" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1589311091843" />
     <state width="1750" height="392" key="GridCell.Tab.0.bottom/0.23.1792.1097@0.23.1792.1097" timestamp="1587869920271" />
-    <state width="1750" height="318" key="GridCell.Tab.0.center" timestamp="1589154982549">
-      <screen x="0" y="0" width="1792" height="1120" />
+    <state width="1878" height="318" key="GridCell.Tab.0.center" timestamp="1589616749266">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1750" height="318" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1589154982549" />
+    <state width="1878" height="318" key="GridCell.Tab.0.center/-1792.-40.1792.1120/0.0.1920.1080@0.0.1920.1080" timestamp="1589616749266" />
+    <state width="1750" height="318" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1589311091841" />
     <state width="1750" height="392" key="GridCell.Tab.0.center/0.23.1792.1097@0.23.1792.1097" timestamp="1587869920270" />
-    <state width="1750" height="318" key="GridCell.Tab.0.left" timestamp="1589154982549">
-      <screen x="0" y="0" width="1792" height="1120" />
+    <state width="1878" height="318" key="GridCell.Tab.0.left" timestamp="1589616749265">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1750" height="318" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1589154982549" />
+    <state width="1878" height="318" key="GridCell.Tab.0.left/-1792.-40.1792.1120/0.0.1920.1080@0.0.1920.1080" timestamp="1589616749265" />
+    <state width="1750" height="318" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1589311091841" />
     <state width="1750" height="392" key="GridCell.Tab.0.left/0.23.1792.1097@0.23.1792.1097" timestamp="1587869920269" />
-    <state width="1750" height="318" key="GridCell.Tab.0.right" timestamp="1589154982550">
-      <screen x="0" y="0" width="1792" height="1120" />
+    <state width="1878" height="318" key="GridCell.Tab.0.right" timestamp="1589616749267">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1750" height="318" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1589154982550" />
+    <state width="1878" height="318" key="GridCell.Tab.0.right/-1792.-40.1792.1120/0.0.1920.1080@0.0.1920.1080" timestamp="1589616749267" />
+    <state width="1750" height="318" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1589311091842" />
     <state width="1750" height="392" key="GridCell.Tab.0.right/0.23.1792.1097@0.23.1792.1097" timestamp="1587869920270" />
     <state width="1750" height="392" key="GridCell.Tab.1.bottom" timestamp="1588909392320">
       <screen x="0" y="0" width="1792" height="1120" />
@@ -333,6 +344,6 @@
     <state x="561" y="251" key="search.everywhere.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1587743244291" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/AjoutsFilm$ProjectsMovieClass.coverage" NAME="ProjectsMovieClass Coverage Results" MODIFIED="1589154982544" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/AjoutsFilm$ProjectsMovieClass.coverage" NAME="ProjectsMovieClass Coverage Results" MODIFIED="1589616749250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
